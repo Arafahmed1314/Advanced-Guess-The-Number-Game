@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number Advanced</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <div class="container flex justify-center items-center h-screen w-full">
+        <div class="box w-[450px] m-auto bg-gray-300 flex flex-col justify-center space-y-5 p-5 rounded-lg shadow-2xl">
+            <div class="headings">
+                <h1 class="text-center font-bold text-xl p-2">Guess The Number Advanced</h1>
+                <p class="text-center">I'm thinking of a number between 1 and 100. You have 10 attempts to guess the right number</p>
+            </div>
+            <div class="main flex  flex-col items-center justify-center space-y-4">
+                <h1 class="text-2xl font-bold">Guess a Number</h1>
+                <input type="number" class="input p-2 border border-blue-800 rounded-lg outline-none">
+                <button class="btn bg-blue-600 text-white px-2 py-1 rounded-lg font-bold">Submit Guess</button>
+            </div>
+            <div class="fotter text-center">
+                <p class="preguess">Previous Guesses : <span id="preguess"></span></p>
+                <p>Guesses Remaining : <span id="attempts">10</span></p>
+                <h2 class="ans text-center text-xl mt-4 hidden">Game Over, Random Number Was <span id="ans"></span></h2>
+                <h2 class="low-high text-center text-xl mt-4 hidden"></h2>
+                <button class=" reset text-center flex justify-center my-3  w-[150px] mx-auto  bg-blue-600 text-white px-2 py-1 rounded-lg font-bold hidden">Reset Game</button>
+                <p class="text-center"> <a href="https://www.linkedin.com/in/mohamed-abdel-alami/" target="_blank">&copy Made  by Araf</a></p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
